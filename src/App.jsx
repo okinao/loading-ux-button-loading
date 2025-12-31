@@ -73,15 +73,6 @@ export default function App() {
   return (
     <div className="min-h-screen bg-slate-50 p-8">
       <div className="max-w-2xl mx-auto space-y-6">
-        <div className="text-center">
-          <h1 className="text-3xl font-bold text-slate-900 mb-2">
-            ボタン内ローディング デモ
-          </h1>
-          <p className="text-slate-600">
-            連打（二重送信）を防止しつつ処理中であることを伝える
-          </p>
-        </div>
-
         <div className="bg-white rounded-lg p-8 shadow-sm space-y-6">
           <div className="space-y-4">
             <div>
@@ -112,16 +103,10 @@ export default function App() {
             </SubmitButton>
           </div>
 
-          {/* 結果表示 */}
           {result && (
             <div className="bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-lg">
               ✓ {result}
             </div>
-          )}
-
-          {/* 連打カウンター */}
-          {clickCount > 0 && (
-            
           )}
         </div>
       </div>
