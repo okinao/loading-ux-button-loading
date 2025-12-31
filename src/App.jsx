@@ -121,28 +121,8 @@ export default function App() {
 
           {/* 連打カウンター */}
           {clickCount > 0 && (
-            <div className="bg-amber-50 border border-amber-200 text-amber-700 px-4 py-3 rounded-lg text-sm">
-              ⚠️ ローディング中に{clickCount}回クリックされました（disabled属性で送信は防止されています）
-            </div>
+            
           )}
-        </div>
-
-        <div className="bg-white rounded-lg p-6 shadow-sm">
-          <h2 className="font-bold text-lg mb-3">実装のポイント</h2>
-          <ul className="space-y-2 text-slate-700">
-            <li className="flex items-start gap-2">
-              <span className="text-blue-600 font-bold">1.</span>
-              <span><code className="text-sm bg-slate-100 px-1 rounded">disabled</code>属性を必ず付与して二重送信を防ぐ</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-blue-600 font-bold">2.</span>
-              <span>ボタンのテキストとアイコンを変更して、処理中であることを明示</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-blue-600 font-bold">3.</span>
-              <span><code className="text-sm bg-slate-100 px-1 rounded">cursor-not-allowed</code>で視覚的にもクリックできないことを示す</span>
-            </li>
-          </ul>
         </div>
       </div>
     </div>
